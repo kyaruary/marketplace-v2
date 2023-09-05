@@ -1,3 +1,5 @@
+import { useUserTokens } from './use-user-tokens'
+
 const BidModal: any = undefined
 const BidStep: any = undefined
 const Trait: any = undefined
@@ -31,7 +33,7 @@ const useBids: any = undefined
 const TokenMedia: any = undefined
 const useDynamicTokens: any = undefined
 const useReservoirClient: any = undefined
-const useUserTokens: any = undefined
+// const useUserTokens: any = undefined
 const useCollectionActivity: any = undefined
 const useTokenActivity: any = undefined
 const useUsersActivity: any = undefined
