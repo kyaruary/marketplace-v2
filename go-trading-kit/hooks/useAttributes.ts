@@ -1,6 +1,7 @@
 import { paths } from '@reservoir0x/reservoir-sdk'
 import useSWR, { SWRConfiguration } from 'swr'
-import useReservoirClient from './useReservoirClient'
+
+import { useGoTradingClient } from './use-go-trading-client'
 
 type AttributesResponse =
   paths['/collections/{collection}/attributes/all/v2']['get']['responses']['200']['schema']
@@ -10,7 +11,7 @@ export default function (
   chainId?: number,
   swrOptions: SWRConfiguration = {}
 ) {
-  const client = useReservoirClient()
+  const client = useGoTradingClient()
   const chain =
     chainId !== undefined
       ? client?.chains.find((chain) => chain.id === chainId)

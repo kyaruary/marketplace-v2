@@ -8,24 +8,16 @@ import {
 } from '@reservoir0x/reservoir-sdk'
 import {
   useCurrencyConversion,
+  useGoTradingClient,
   useListings,
   useReservoirClient,
   useTokens,
-} from '../hooks'
-import { getChainCurrency } from '../hooks/useChainCurrency'
-import { defaultFetcher } from '../lib/swr'
-import React, {
-  createContext,
-  useCallback,
-  useRef,
-  ReactNode,
-  useEffect,
-  FC,
-  useState,
-} from 'react'
+} from '../../hooks'
+import { getChainCurrency } from '../../hooks/useChainCurrency'
+import { defaultFetcher } from '../../lib/swr'
+import { useCallback, useRef, useEffect, useState } from 'react'
 import { useAccount, useNetwork, useSwitchNetwork } from 'wagmi'
 import { formatUnits, parseUnits, zeroAddress } from 'viem'
-import { version } from '../../package.json'
 import { getNetwork, getWalletClient } from 'wagmi/actions'
 
 type Order = NonNullable<ReturnType<typeof useListings>['data'][0]>
@@ -100,6 +92,7 @@ export type Cart = {
   } | null
 }
 
+const version = '0.0.1'
 const CartStorageKey = `reservoirkit.cart.${version}`
 
 type CartStoreProps = {
@@ -108,11 +101,8 @@ type CartStoreProps = {
   persist?: boolean
 }
 
-function cartStore({
-  feesOnTopBps,
-  feesOnTopUsd,
-  persist = true,
-}: CartStoreProps) {
+export function useCartService(option: CartStoreProps) {
+  const { feesOnTopBps, feesOnTopUsd, persist = true } = option
   const { address } = useAccount()
   const { chains } = useNetwork()
   const { switchNetworkAsync } = useSwitchNetwork()
@@ -129,7 +119,7 @@ function cartStore({
   })
 
   const subscribers = useRef(new Set<() => void>())
-  const client = useReservoirClient()
+  const client = useGoTradingClient()
   const { data: usdFeeConversion } = useCurrencyConversion(
     cartChain?.id,
     cartCurrency?.contract,
@@ -320,6 +310,7 @@ function cartStore({
         return { tokens: [] }
       }
 
+      // TODO: all chains need change origin
       const reservoirChain = client?.chains.find(
         (chain) => chain.id === chainId
       )
@@ -1244,30 +1235,4 @@ function cartStore({
     validate,
     checkout,
   }
-}
-
-export const CartContext = createContext<ReturnType<typeof cartStore> | null>(
-  null
-)
-
-type CartProviderProps = {
-  children: ReactNode
-  feesOnTopBps?: string[]
-  feesOnTopUsd?: string[]
-  persist?: boolean
-}
-
-export const CartProvider: FC<CartProviderProps> = function ({
-  children,
-  feesOnTopBps,
-  feesOnTopUsd,
-  persist,
-}) {
-  return (
-    <CartContext.Provider
-      value={cartStore({ feesOnTopBps, feesOnTopUsd, persist })}
-    >
-      {children}
-    </CartContext.Provider>
-  )
 }

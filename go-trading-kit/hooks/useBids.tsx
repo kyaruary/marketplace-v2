@@ -1,6 +1,6 @@
 import { paths, setParams } from '@reservoir0x/reservoir-sdk'
 import { SWRInfiniteConfiguration } from 'swr/infinite'
-import { useInfiniteApi, useReservoirClient } from '.'
+import { useGoTradingClient, useInfiniteApi, useReservoirClient } from '.'
 import { useMemo } from 'react'
 
 type Bids = paths['/orders/bids/v6']['get']['responses']['200']['schema']
@@ -12,7 +12,7 @@ export default function (
   enabled: boolean = true,
   chainId?: number
 ) {
-  const client = useReservoirClient()
+  const client = useGoTradingClient()
 
   const response = useInfiniteApi<Bids>(
     (pageIndex, previousPageData) => {

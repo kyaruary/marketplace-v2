@@ -1,6 +1,6 @@
+import { version } from 'go-trading-kit/version'
 import { ComponentPropsWithoutRef } from 'react'
 import { Cache, SWRConfig } from 'swr'
-import { version } from '../../package.json'
 
 export const defaultHeaders = (
   apiKey?: string | null,

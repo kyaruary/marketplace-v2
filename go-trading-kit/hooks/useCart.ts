@@ -1,4 +1,4 @@
-import { Cart, CartContext } from '../context/CartProvider'
+import { Cart, CartContext } from '../store'
 import { useContext, useSyncExternalStore } from 'react'
 
 export default function useCart<SelectorOutput>(

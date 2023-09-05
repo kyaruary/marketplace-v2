@@ -7,7 +7,7 @@ import {
   FormatCurrency,
   Text,
 } from '../../primitives'
-import { styled } from '../../../stitches.config'
+import { styled } from '../../stitches.config'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faArrowDown,
