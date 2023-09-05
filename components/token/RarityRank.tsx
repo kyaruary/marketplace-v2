@@ -1,9 +1,5 @@
 import { Flex, Text, Tooltip } from 'components/primitives'
-import {
-  useAttributes,
-  useCollections,
-  useTokens,
-} from '@reservoir0x/reservoir-kit-ui'
+import { useAttributes, useCollections, useTokens } from '@/gotrading-kit'
 import { formatNumber } from 'utils/numbers'
 
 type Props = {

@@ -6,7 +6,7 @@ import React, {
   useContext,
 } from 'react'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
-import { CollectModal, CollectStep } from '@reservoir0x/reservoir-kit-ui'
+import { CollectModal, CollectStep } from '@/gotrading-kit'
 import { useMarketplaceChain, useRKModalPrepareDeeplink } from 'hooks'
 import { useNetwork, useWalletClient, useSwitchNetwork } from 'wagmi'
 import { CSS } from '@stitches/react'

@@ -11,7 +11,7 @@ import {
 import { useMediaQuery } from 'react-responsive'
 import { useMarketplaceChain, useMounted } from 'hooks'
 import { paths } from '@reservoir0x/reservoir-sdk'
-import { useCollections } from '@reservoir0x/reservoir-kit-ui'
+import { useCollections } from '@/gotrading-kit'
 import fetcher from 'utils/fetcher'
 import { NORMALIZE_ROYALTIES } from '../../_app'
 import supportedChains, { DefaultChain } from 'utils/chains'

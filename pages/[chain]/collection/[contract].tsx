@@ -5,7 +5,7 @@ import {
   useCollectionActivity,
   useDynamicTokens,
   useAttributes,
-} from '@reservoir0x/reservoir-kit-ui'
+} from '@/gotrading-kit'
 import { paths } from '@reservoir0x/reservoir-sdk'
 import Layout from 'components/Layout'
 import { useEffect, useMemo, useRef, useState } from 'react'

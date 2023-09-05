@@ -33,7 +33,7 @@ import {
   useReservoirClient,
   useTokens,
   useUserTokens,
-} from '@reservoir0x/reservoir-kit-ui'
+} from '@/gotrading-kit'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBolt,

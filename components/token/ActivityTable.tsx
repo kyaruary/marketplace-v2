@@ -13,7 +13,7 @@ import {
   useCollectionActivity,
   useTokenActivity,
   useUsersActivity,
-} from '@reservoir0x/reservoir-kit-ui'
+} from '@/gotrading-kit'
 import LoadingSpinner from 'components/common/LoadingSpinner'
 import { useENSResolver, useMarketplaceChain, useTimeSince } from 'hooks'
 import Link from 'next/link'

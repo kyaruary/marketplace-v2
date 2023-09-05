@@ -1,4 +1,4 @@
-import { BidModal, BidStep, Trait } from '@reservoir0x/reservoir-kit-ui'
+import { BidModal, BidStep, Trait } from '@/gotrading-kit'
 import { Button } from 'components/primitives'
 import { useRouter } from 'next/router'
 import {
@@ -17,7 +17,7 @@ import {
   useWalletClient,
   useSwitchNetwork,
 } from 'wagmi'
-import { useCollections } from '@reservoir0x/reservoir-kit-ui'
+import { useCollections } from '@/gotrading-kit'
 import { SWRResponse } from 'swr'
 import { CSS } from '@stitches/react'
 import { useConnectModal } from '@rainbow-me/rainbowkit'

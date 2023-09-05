@@ -1,4 +1,4 @@
-import { AcceptBidModal, AcceptBidStep } from '@reservoir0x/reservoir-kit-ui'
+import { AcceptBidModal, AcceptBidStep } from '@/gotrading-kit'
 import {
   cloneElement,
   ComponentProps,

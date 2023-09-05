@@ -1,6 +1,6 @@
 import { faGasPump } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useBids, useListings, useTokens } from '@reservoir0x/reservoir-kit-ui'
+import { useBids, useListings, useTokens } from '@/gotrading-kit'
 import { AcceptBid, Bid, BuyNow, List } from 'components/buttons'
 import AddToCart from 'components/buttons/AddToCart'
 import CancelBid from 'components/buttons/CancelBid'

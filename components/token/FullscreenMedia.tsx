@@ -9,11 +9,7 @@ import {
   DialogPortal,
   DialogClose,
 } from '@radix-ui/react-dialog'
-import {
-  TokenMedia,
-  useTokens,
-  extractMediaType,
-} from '@reservoir0x/reservoir-kit-ui'
+import { TokenMedia, useTokens, extractMediaType } from '@/gotrading-kit'
 import { motion } from 'framer-motion'
 
 type Props = {

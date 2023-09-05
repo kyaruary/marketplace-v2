@@ -11,10 +11,7 @@ import {
 } from 'wagmi'
 import { CSS } from '@stitches/react'
 import { SWRResponse } from 'swr'
-import {
-  EditListingModal,
-  EditListingStep,
-} from '@reservoir0x/reservoir-kit-ui'
+import { EditListingModal, EditListingStep } from '@/gotrading-kit'
 
 type Props = {
   listingId?: string

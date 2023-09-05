@@ -1,7 +1,15 @@
-import { Currency } from '@reservoir0x/reservoir-kit-ui'
+import { Currency } from '@/gotrading-kit'
 import wrappedContracts from './wrappedContracts'
 import { zeroAddress } from 'viem'
-import { arbitrum, mainnet, polygon, optimism, Chain, bsc, avalanche } from 'wagmi/chains'
+import {
+  arbitrum,
+  mainnet,
+  polygon,
+  optimism,
+  Chain,
+  bsc,
+  avalanche,
+} from 'wagmi/chains'
 import usdcContracts from './usdcContracts'
 
 //Chains that are missing from wagmi:

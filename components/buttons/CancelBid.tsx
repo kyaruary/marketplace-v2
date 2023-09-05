@@ -1,5 +1,5 @@
 import { useConnectModal } from '@rainbow-me/rainbowkit'
-import { CancelBidModal, CancelBidStep } from '@reservoir0x/reservoir-kit-ui'
+import { CancelBidModal, CancelBidStep } from '@/gotrading-kit'
 import { FC, ReactElement, cloneElement, useContext } from 'react'
 import { SWRResponse } from 'swr'
 import { useNetwork, useWalletClient, useSwitchNetwork } from 'wagmi'

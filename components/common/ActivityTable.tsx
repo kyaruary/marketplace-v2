@@ -1,7 +1,4 @@
-import {
-  useCollectionActivity,
-  useUsersActivity,
-} from '@reservoir0x/reservoir-kit-ui'
+import { useCollectionActivity, useUsersActivity } from '@/gotrading-kit'
 import { FC, useEffect, useRef, useMemo } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import {

@@ -1,6 +1,6 @@
 import { faGasPump, faTag } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useListings } from '@reservoir0x/reservoir-kit-ui'
+import { useListings } from '@/gotrading-kit'
 import { BuyNow } from 'components/buttons'
 import AddToCart from 'components/buttons/AddToCart'
 import CancelListing from 'components/buttons/CancelListing'

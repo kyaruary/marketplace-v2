@@ -1,4 +1,4 @@
-import { useUserTokens } from '@reservoir0x/reservoir-kit-ui'
+import { useUserTokens } from '@/gotrading-kit'
 import { Text, Button, Box } from '../primitives'
 import {
   DropdownMenuItem,

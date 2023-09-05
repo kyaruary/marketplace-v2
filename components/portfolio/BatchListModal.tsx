@@ -1,11 +1,7 @@
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useConnectModal } from '@rainbow-me/rainbowkit'
-import {
-  Currency,
-  Listings,
-  useReservoirClient,
-} from '@reservoir0x/reservoir-kit-ui'
+import { Currency, Listings, useReservoirClient } from '@/gotrading-kit'
 import { Execute } from '@reservoir0x/reservoir-sdk'
 import LoadingSpinner from 'components/common/LoadingSpinner'
 import { Modal } from 'components/common/Modal'

@@ -7,7 +7,7 @@ import React, {
 } from 'react'
 import { SWRResponse } from 'swr'
 import { useNetwork, useWalletClient } from 'wagmi'
-import { BuyModal, BuyStep } from '@reservoir0x/reservoir-kit-ui'
+import { BuyModal, BuyStep } from '@/gotrading-kit'
 import { useSwitchNetwork } from 'wagmi'
 import { Button } from 'components/primitives'
 import { useConnectModal } from '@rainbow-me/rainbowkit'

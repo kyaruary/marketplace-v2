@@ -1,4 +1,4 @@
-import { useReservoirClient } from '@reservoir0x/reservoir-kit-ui'
+import { useReservoirClient } from '@/gotrading-kit'
 import { paths } from '@reservoir0x/reservoir-sdk'
 import { ChainContext } from 'context/ChainContextProvider'
 import { useContext } from 'react'

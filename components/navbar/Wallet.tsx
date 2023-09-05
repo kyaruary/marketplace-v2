@@ -11,7 +11,7 @@ import { mainnet, polygon, optimism } from 'wagmi/chains'
 import { useAccount, useContractReads, erc20ABI, useBalance } from 'wagmi'
 import { useMemo, useState } from 'react'
 import { zeroAddress, formatUnits } from 'viem'
-import { useCoinConversion } from '@reservoir0x/reservoir-kit-ui'
+import { useCoinConversion } from '@/gotrading-kit'
 
 //CONFIGURABLE: Here you may configure currencies that you want to display in the wallet menu. Native currencies,
 //like ETH/MATIC etc need to be fetched in a different way. Configure them below

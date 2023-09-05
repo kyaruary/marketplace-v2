@@ -1,10 +1,6 @@
 import { faCheck, faCircleExclamation } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  extractMediaType,
-  TokenMedia,
-  useDynamicTokens,
-} from '@reservoir0x/reservoir-kit-ui'
+import { extractMediaType, TokenMedia, useDynamicTokens } from '@/gotrading-kit'
 import AddToCart from 'components/buttons/AddToCart'
 import BuyNow from 'components/buttons/BuyNow'
 import {

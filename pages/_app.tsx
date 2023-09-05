@@ -27,7 +27,7 @@ import {
   lightTheme as reservoirLightTheme,
   ReservoirKitTheme,
   CartProvider,
-} from '@reservoir0x/reservoir-kit-ui'
+} from '@/gotrading-kit'
 import { FC, useContext, useEffect, useState } from 'react'
 import { HotkeysProvider } from 'react-hotkeys-hook'
 import ToastContextProvider from 'context/ToastContextProvider'

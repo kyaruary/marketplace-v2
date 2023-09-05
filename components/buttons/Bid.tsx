@@ -1,4 +1,4 @@
-import { BidModal, BidStep } from '@reservoir0x/reservoir-kit-ui'
+import { BidModal, BidStep } from '@/gotrading-kit'
 import { Button } from 'components/primitives'
 import {
   cloneElement,

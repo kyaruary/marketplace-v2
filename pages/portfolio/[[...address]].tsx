@@ -11,7 +11,7 @@ import {
   AcceptBidStep,
   useUserCollections,
   useUserTokens,
-} from '@reservoir0x/reservoir-kit-ui'
+} from '@/gotrading-kit'
 import { useENSResolver, useMounted } from '../../hooks'
 import { TokenTable, TokenTableRef } from 'components/portfolio/TokenTable'
 import { ConnectWalletButton } from 'components/ConnectWalletButton'
@@ -33,7 +33,7 @@ import PortfolioSortDropdown, {
 import { ActivityFilters } from 'components/common/ActivityFilters'
 import { MobileActivityFilters } from 'components/common/MobileActivityFilters'
 import { UserActivityTable } from 'components/portfolio/UserActivityTable'
-import { useCollectionActivity } from '@reservoir0x/reservoir-kit-ui'
+import { useCollectionActivity } from '@/gotrading-kit'
 import { useRouter } from 'next/router'
 import { ItemView, ViewToggle } from 'components/portfolio/ViewToggle'
 import { ToastContext } from 'context/ToastContextProvider'

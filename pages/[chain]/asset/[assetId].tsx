@@ -14,7 +14,7 @@ import {
   useListings,
   useTokenActivity,
   useUserTokens,
-} from '@reservoir0x/reservoir-kit-ui'
+} from '@/gotrading-kit'
 import { paths } from '@reservoir0x/reservoir-sdk'
 import { ActivityFilters } from 'components/token/ActivityFilters'
 import { spin } from 'components/common/LoadingSpinner'

@@ -20,7 +20,7 @@ import {
   useMemo,
   useState,
 } from 'react'
-import { Currency } from '@reservoir0x/reservoir-kit-ui'
+import { Currency } from '@/gotrading-kit'
 import expirationOptions from 'utils/defaultExpirationOptions'
 import { ExpirationOption } from 'types/ExpirationOption'
 import { UserToken } from 'pages/portfolio/[[...address]]'

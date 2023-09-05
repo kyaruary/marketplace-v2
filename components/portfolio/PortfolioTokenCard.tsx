@@ -16,7 +16,7 @@ import {
   useDynamicTokens,
   useTokens,
   useUserTokens,
-} from '@reservoir0x/reservoir-kit-ui'
+} from '@/gotrading-kit'
 import { AcceptBid } from 'components/buttons'
 import BuyNow from 'components/buttons/BuyNow'
 import CancelListing from 'components/buttons/CancelListing'

@@ -20,7 +20,7 @@ import {
   useEffect,
   useState,
 } from 'react'
-import { Currency, Listings, ListModal } from '@reservoir0x/reservoir-kit-ui'
+import { Currency, Listings, ListModal } from '@/gotrading-kit'
 import expirationOptions from 'utils/defaultExpirationOptions'
 import { ExpirationOption } from 'types/ExpirationOption'
 import { UserToken } from 'pages/portfolio/[[...address]]'

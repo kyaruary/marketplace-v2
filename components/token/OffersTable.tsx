@@ -1,6 +1,6 @@
 import { faGasPump, faHand } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useBids } from '@reservoir0x/reservoir-kit-ui'
+import { useBids } from '@/gotrading-kit'
 import { AcceptBid } from 'components/buttons'
 import CancelBid from 'components/buttons/CancelBid'
 import EditBid from 'components/buttons/EditBid'

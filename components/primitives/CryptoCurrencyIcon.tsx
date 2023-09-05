@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { styled } from '../../stitches.config'
 import { StyledComponent } from '@stitches/react/types/styled-component'
-import { useReservoirClient } from '@reservoir0x/reservoir-kit-ui'
+import { useReservoirClient } from '@/gotrading-kit'
 import { zeroAddress } from 'viem'
 
 type Props = {

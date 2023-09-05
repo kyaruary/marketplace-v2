@@ -1,7 +1,4 @@
-import {
-  useCollections,
-  useReservoirClient,
-} from '@reservoir0x/reservoir-kit-ui'
+import { useCollections, useReservoirClient } from '@/gotrading-kit'
 import { paths } from '@reservoir0x/reservoir-sdk'
 import useSWR, { SWRConfiguration } from 'swr'
 import { setParams } from '@reservoir0x/reservoir-sdk'

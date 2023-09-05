@@ -1,4 +1,4 @@
-import { useCollections } from '@reservoir0x/reservoir-kit-ui'
+import { useCollections } from '@/gotrading-kit'
 import { Text, Button, Box } from '../primitives'
 import {
   DropdownMenuItem,
